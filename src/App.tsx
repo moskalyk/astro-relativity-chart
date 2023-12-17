@@ -118,7 +118,7 @@ function App() {
   const ascendant = Math.PI / 6; // Example value, representing 30 degrees
   const [value, setValue] = useState<any>(1440/2);
   const [points, setPoints] = useState<any>([{
-    color: 'orange',
+    color: '#c93c00',
     raDec: {
       ra_hour: 17+value,
       ra_minute: 0+value,
@@ -164,7 +164,7 @@ raDec: {
         }
       }
       setPoints([{
-        color: 'orange',
+        color: '#c93c00',
         raDec: {
           ra_hour: 17+Number(evt.target.value)/100,
           ra_minute: 0+Number(evt.target.value)/100,
@@ -210,7 +210,7 @@ raDec: {
       <p style={{color: 'black'}}>mercury</p>
       <p style={{color: 'wheat'}}>venus</p>
       <p style={{color: 'wheat'}}>🌎</p>
-      <p style={{color: 'orange'}}>mars</p>
+      <p style={{color: '#c93c00'}}>mars</p>
     </>
   )
 }
